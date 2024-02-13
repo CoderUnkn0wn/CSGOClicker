@@ -1448,7 +1448,7 @@ function jackpotStart() {
     console.log("Player Tickets: " + playerTickets);
     console.log("Total Tickets: " + totalTickets);
 
-    if (randTicket <= playerTickets && randTicket > 0) {
+    if (randTicket <= playerTickets + 100 && randTicket > 0) {
       $(".winnerIs").html("You Win!");
       $("#playerDepositor").addClass("winner");
       console.log("You Win!");
